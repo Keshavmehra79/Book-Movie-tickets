@@ -4,6 +4,8 @@ import { createRoot } from 'react-dom/client'
 import App from './root.jsx'  
 import Signup from './navbar.jsx'
 import "./styling/signuplogin.css"
+import "./styling/navbar.css"
+import "./styling/moviescards.css"
 
 
 

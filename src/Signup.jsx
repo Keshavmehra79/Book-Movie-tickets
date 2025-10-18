@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Signup=()=>{
     const[formdata,setdate]=useState({
         name:"",
@@ -14,7 +15,7 @@ const Signup=()=>{
         })
     }
 
-
+const nvgt=useNavigate()
     const handlesubmit=(e)=>{
         e.preventDefault()
         if(formdata.name==""){
@@ -56,9 +57,9 @@ const Signup=()=>{
         }
         localStorage.setItem('Userdata',JSON.stringify(formdata))
         alert("Submitted")
+        nvgt("/movies")
 
     }
-    localStorage.clear('Userdata')
     return(
         <>
        
