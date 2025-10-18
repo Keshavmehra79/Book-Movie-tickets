@@ -9,7 +9,7 @@ const login=()=>{
         <hr />
             <input type="email" placeholder="Email"/><br></br>
             <input type="password" placeholder="Password"/><br></br>
-            <button type="submit">Login</button>
+            <button type="submit" className="btn">Login</button>
         </form>
         
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+
 const Movies=()=>{
     return(
         <><div id="container">
@@ -10,6 +11,8 @@ const Movies=()=>{
             <section>card2</section>
             <section>card3</section>
             <section>card4</section>
+
+
             <section>card4</section>
             <section>card4</section>
             <section>card4</section>

@@ -75,9 +75,9 @@ const nvgt=useNavigate()
             <input type="email" name="email" value={formdata.email} onChange={handlechange} placeholder="Enter your email" /><br></br>
              Password:<br></br>
             <input type="password" name="password" value={formdata.password} onChange={handlechange}placeholder="Create your password"/><br></br><br></br>
-            <button>Sign-Up</button><br></br>
+            <button className="btn">Sign-Up</button><br></br>
             <p>Or</p>
-            <button>Login</button>
+            <button className="btn">Login</button>
 
         </form>
         </div>
