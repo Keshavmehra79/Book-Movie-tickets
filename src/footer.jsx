@@ -19,12 +19,15 @@ const footer=()=>{
         </div>
 
             <div className="sect">
-                <h1>About the company</h1>
-                <p>Hello Guys, I am Keshav frontend developer<br></br> and i have made this web to showcase my frontend skills <br></br> so please feel free to ask me anything if you get anything or about any mistake <br></br>or error in layout of this project</p>
-                <FaFacebookF />
-                <FaGithub/>
-                <FaLinkedin/>
-                <RiInstagramFill/>
+              <h3 style={{"font-weight":"bold","color":"white"}}>About the company</h3>
+                <p style={{"color":"gray","margin":"15px"}}>Hello Guys, I am Keshav frontend developer<br></br> and i have made this web to showcase my frontend skills <br></br> so please feel free to ask me anything if you get anything or about any mistake <br></br>or error in layout of this project</p>
+               <div id="footerlast">
+                <div  className="iconfoot"><FaFacebookF /></div> 
+                <div className="iconfoot"><FaGithub/></div>
+                <div className="iconfoot"><FaLinkedin/></div>
+                <div className="iconfoot"><RiInstagramFill/></div>
+                
+                </div>  
             </div>
 
        </footer>
