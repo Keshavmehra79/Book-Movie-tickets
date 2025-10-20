@@ -29,7 +29,6 @@ const footer=()=>{
                 
                 </div>  
             </div>
-
        </footer>
         </>
     )

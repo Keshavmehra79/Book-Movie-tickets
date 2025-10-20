@@ -1,0 +1,61 @@
+#textoffer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40vh;
+}
+
+.offer{
+    width: 30%;
+}
+
+#offeriimg{
+    height:40vh;
+    border-radius: 50px;
+}
+
+#head1{
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#movies{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.thismovies{
+    height:55vh;
+    width: 35vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius:25px;
+
+}
+
+
+.cardimg{
+    height: 60%;
+    width: 100%;
+    border-radius:25px;
+}
+
+.btn11{
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: lightblue;
+
+}
+
