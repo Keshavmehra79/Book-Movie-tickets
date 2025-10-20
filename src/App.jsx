@@ -7,10 +7,7 @@ import Signup from "./login.jsx";
 
 const App = () => {
 
-  const person = {
-    name: "Naeem",
-    age: 25
-  }
+  
 
   return (
     <>

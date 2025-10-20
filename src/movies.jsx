@@ -4,10 +4,9 @@ import Typed from "typed.js"
 import offer from "./assets/poster50.png"
 import cardimg from "./assets/cardimg.jpg"
 import cardimg2 from "./assets/cardimg2.jpg"
-const Movies=(props)=>{
+const Movies=()=>{
 
-    const {data1,data2}=props;
-    
+ 
     const textref=useRef(null)
     useEffect(()=>{
         const typed=new Typed(textref.current,{
@@ -48,7 +47,7 @@ const Movies=(props)=>{
                 <div className="thismovies">
                     <img src={cardimg} alt="" className="cardimg"/>
                     <p>action/thriller</p>
-                    <h2>{data1.movie}</h2>
+                    <h2>Coolie</h2>
                     <p>rating-4.0</p>
                     <p>screen time- 2h50m</p>
                     <button className="btn11">Book now</button>
@@ -64,7 +63,6 @@ const Movies=(props)=>{
                     
                 </div>
             </div>
-
 
         </>
     )
