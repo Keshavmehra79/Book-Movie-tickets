@@ -7,7 +7,7 @@ const Nav=()=>{
          let storage=localStorage.getItem('Userdata')
         if(!storage){
             e.preventDefault()
-            alert("Please login first")
+            alert("Please login or signup first")
             navigate("/signup")
         } 
         else {

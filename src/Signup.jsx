@@ -8,14 +8,25 @@ const Signup=()=>{
         password:""
 
     })
-
+    
+    const nvgt=useNavigate()
+    const loginpress=()=>{
+        let data=localStorage.getItem('Userdata')
+        if(!data){
+            alert("Please create an account first then login")
+            return
+        }
+        else{
+            nvgt("/login")
+        }
+    }
     const handlechange=(e)=>{
         setdate({
             ...formdata,[e.target.name]:e.target.value
         })
     }
 
-const nvgt=useNavigate()
+
     const handlesubmit=(e)=>{
         e.preventDefault()
         if(formdata.name==""){
@@ -57,7 +68,7 @@ const nvgt=useNavigate()
         }
         localStorage.setItem('Userdata',JSON.stringify(formdata))
         alert("Submitted")
-        nvgt("/movies")
+        nvgt("/login")
 
     }
     return(
@@ -75,11 +86,11 @@ const nvgt=useNavigate()
             <input type="email" name="email" value={formdata.email} onChange={handlechange} placeholder="Enter your email" /><br></br>
              Password:<br></br>
             <input type="password" name="password" value={formdata.password} onChange={handlechange}placeholder="Create your password"/><br></br><br></br>
-            <button className="btn">Sign-Up</button><br></br>
+            <button className="btn" type="submit">Sign-Up</button><br></br>
             <p>Or</p>
-            <button className="btn">Login</button>
 
         </form>
+            <button className="btn"  onClick={loginpress}>Login</button>
         </div>
         
         </>
