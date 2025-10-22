@@ -22,7 +22,7 @@ const Nav=()=>{
                 <li className="deco"><Link to="/" >Home</Link></li>
                 <li className="deco"><Link to="/movies" onClick={(e)=>(checksignup(e,"/movies"))}>Movies</Link> </li>
                 <li className="deco"><Link to="/tickets" onClick={(e)=>(checksignup(e,"/tickets"))}>View tickets</Link></li>
-                <li className="deco"><Link to="/contact" onClick={(e)=>(checksignup(e,"/contact"))}>Contact us</Link></li>
+                <li className="deco"><Link to="/contact" onClick={(e)=>(checksignup(e,"/contact"))}>Help</Link></li>
             </ul>
         </nav>
         </>

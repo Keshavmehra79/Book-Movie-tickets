@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const login=()=>{
 
     const[logindata,setdata]=useState({
@@ -10,6 +11,9 @@ const login=()=>{
         setdata({...logindata,[e.target.name]:e.target.value})
     }
     
+
+       let navigt=useNavigate()
+
     const loginsubmit=(e)=>{
         e.preventDefault()
         if(logindata.email==""){
@@ -20,10 +24,18 @@ const login=()=>{
             alert("Please Enter your password")
             return 
         }
-        let Userdata=localStorage.getItem('Userdata')
-        console.log(Userdata.email);
-        console.log(Userdata.password);
-        
+        let userdata=JSON.parse(localStorage.getItem('Userdata'))
+         if(logindata.email!=userdata.email){
+            alert("User Not found ! please enter correct email")
+            return
+         }
+         else if(logindata.password!=userdata.password){
+            alert("User Not found ! please enter correct password")
+            return
+         }
+
+       alert("You have logged in succefully")
+         navigt("/")
         
     }
     return(

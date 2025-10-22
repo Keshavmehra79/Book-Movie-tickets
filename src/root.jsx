@@ -9,6 +9,7 @@ import Footer from "./footer.jsx"
 import Contact from "./contact.jsx"
 import Movies from "./movies.jsx"
 import Tickets from "./tickets.jsx";
+import Buyticket from "./buyticket.jsx";
 
 const root=()=>{
  
@@ -22,6 +23,8 @@ const root=()=>{
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/movies" element={<Movies/>}/>
             <Route path="/tickets" element={<Tickets/>}/>
+            <Route path="/buyticket" element={<Buyticket/>}/>
+
 
         </Routes>
         

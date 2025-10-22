@@ -7,6 +7,8 @@ import "./styling/signuplogin.css"
 import "./styling/navbar.css"
 import "./styling/moviescards.css"
 import "./styling/footer.css"
+import "./styling/buytickets.css"
+
 
 
 
