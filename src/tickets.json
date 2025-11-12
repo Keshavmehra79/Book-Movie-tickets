@@ -1,0 +1,31 @@
+{
+  "ticketdata": [
+    {
+      "id": "d9d2",
+      "category": "Child",
+      "selecttime": "",
+      "moviename": "puspa",
+      "date": "2025-10-26",
+      "people": "2",
+      "price": ""
+    },
+    {
+      "id": "eaed",
+      "category": "Senior",
+      "selecttime": "",
+      "moviename": "coolie",
+      "date": "2025-11-02",
+      "people": "3",
+      "price": ""
+    },
+    {
+      "id": "0d92",
+      "category": "Senior",
+      "selecttime": "12pm:00-03:00pm",
+      "moviename": "coolie",
+      "date": "2025-11-02",
+      "people": "3",
+      "price": ""
+    }
+  ]
+}

@@ -5,8 +5,9 @@
 }
 
 #ticketform{
+    text-align: center;
 width: 25%;
-height: 50vh;
+height: 70vh;
 margin:auto ;
 background-color: white;
 }
