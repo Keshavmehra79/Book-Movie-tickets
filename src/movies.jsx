@@ -1,5 +1,6 @@
 import React from "react";
-import { useRef,useEffect } from "react";
+import { useRef,useEffect} from "react";
+import { useNavigate } from "react-router-dom";
 import Typed from "typed.js"
 import offer from "./assets/poster50.png"
 import cardimg from "./assets/cardimg.jpg"
@@ -22,6 +23,11 @@ const Movies=()=>{
         typed.destroy();
     }
 },[]);
+
+const nvgt=useNavigate();
+const buyticket=()=>{
+nvgt("/buyticket")
+}
     return(
         <>
         {/* section1 */}
@@ -50,7 +56,7 @@ const Movies=()=>{
                     <h2>Coolie</h2>
                     <p>rating-4.0</p>
                     <p>screen time- 2h50m</p>
-                    <button className="btn11">Book now</button>
+                    <button className="btn11" onClick={buyticket}>Book now</button>
                 </div>
 
                 <div className="thismovies">
@@ -59,7 +65,7 @@ const Movies=()=>{
                     <h2>War 2</h2>
                     <p>rating-4.3</p>
                     <p>screen time= 2h50m</p>
-                    <button className="btn11">Book now</button>
+                    <button className="btn11" onClick={buyticket}>Book now</button>
                     
                 </div>
             </div>

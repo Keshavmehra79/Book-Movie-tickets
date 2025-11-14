@@ -1,31 +1,40 @@
 {
   "ticketdata": [
     {
-      "id": "d9d2",
-      "category": "Child",
-      "selecttime": "",
-      "moviename": "puspa",
-      "date": "2025-10-26",
-      "people": "2",
-      "price": ""
-    },
-    {
-      "id": "eaed",
-      "category": "Senior",
-      "selecttime": "",
-      "moviename": "coolie",
-      "date": "2025-11-02",
-      "people": "3",
-      "price": ""
-    },
-    {
-      "id": "0d92",
       "category": "Senior",
       "selecttime": "12pm:00-03:00pm",
-      "moviename": "coolie",
+      "moviename": "Ashiqui",
       "date": "2025-11-02",
       "people": "3",
-      "price": ""
+      "price": 250,
+      "id": "eaed"
+    },
+    {
+      "category": "Adult",
+      "selecttime": "08:00pm-10:00pm",
+      "moviename": "rrr",
+      "date": "2025-11-28",
+      "people": "7",
+      "price": 250,
+      "id": "0d92"
+    },
+    {
+      "category": "Child",
+      "selecttime": "12pm:00-03:00pm",
+      "moviename": "jung",
+      "date": "2025-11-16",
+      "people": "5",
+      "price": 250,
+      "id": "9e28"
+    },
+    {
+      "category": "Senior",
+      "selecttime": "08am:00-10:00am",
+      "moviename": "tadap",
+      "date": "2025-11-13",
+      "people": "4",
+      "price": 250,
+      "id": "9856"
     }
   ]
 }

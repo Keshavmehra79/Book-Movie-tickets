@@ -17,7 +17,7 @@ const Buyticket=()=>{
 
     const senddata=(e)=>{
         e.preventDefault();
-        axios.post(`http://localhost:3000/ticketdata`,formdata).then(()=>{
+        axios.post(`http://localhost:3000/ticketdata`,{...formdata,price:250}).then(()=>{
 
             alert("Data sent succefully........")
         }).catch((err)=>{
@@ -34,12 +34,14 @@ const Buyticket=()=>{
                 <form onSubmit={senddata}>
                 Category<br></br>
                 <select name="category" id="" value={formdata.category} onChange={handlechange}>
+                    <option value="" disabled selected hidden>select category</option>
                     <option >Adult</option>
                     <option >Child</option>
                     <option >Senior</option>
                 </select><br></br>
                 Select Time<br></br>
                 <select name="selecttime" id="" value={formdata.selecttime} onChange={handlechange}>
+                    <option value="" disabled selected hidden>select Time</option>
                     <option value="08am:00-10:00am">08am:00-10:00am</option>
                     <option value="12pm:00-03:00pm">12pm:00-03:00pm</option>
                     <option value="08:00pm-10:00pm">08:00pm-10:00pm</option>

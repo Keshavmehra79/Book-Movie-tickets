@@ -1,0 +1,32 @@
+
+#tb1{
+    height: 50vh;
+    margin: auto;
+    font-size: medium;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+#head{
+text-align: center;
+background-color: darkslateblue;
+color: white;
+
+}
+
+
+
+
+#editbtn{
+color: lightseagreen;
+
+font-size: large;
+}
+
+#deletebtn{
+   color: rgb(212, 56, 56);
+
+}
+
