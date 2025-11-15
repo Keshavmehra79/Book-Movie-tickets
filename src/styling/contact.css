@@ -1,0 +1,62 @@
+#sec1{
+    height:80vh;
+    width: 100%;
+    background-color: rgb(172, 156, 156);
+    text-align: center;
+}
+
+#sec2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#msgdiv{
+    margin: 30px;
+    padding: 10px;
+    height: 35vh;
+    width: 50vh;
+    background-color: white;
+}
+
+#sendbtn{
+    background-color: rgb(10, 167, 228);
+    color: white;
+    font-weight: bold;
+    width: 70%;
+    height: 30px;
+    margin: 20px;
+    border: none;
+}
+
+#divs{
+    margin: 30px;
+    padding: 10px;
+     height: 50vh;
+     background-color: rgb(36, 34, 34);
+    width: 40vh;
+    color: white;
+}
+
+.icons{
+  background-color: white;
+width: 30px;
+height: 30px;
+color: black;
+padding: 2px 2px;
+border-radius: 50px;
+margin: auto;
+margin-top: 5px;
+display: grid;
+place-items: center;
+}
+
+.Add{
+    margin: 5px;
+    padding: 5px;
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(24, 24, 220);
+}
+

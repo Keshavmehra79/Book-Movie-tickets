@@ -8,6 +8,7 @@ import "./styling/navbar.css"
 import "./styling/moviescards.css"
 import "./styling/footer.css"
 import "./styling/buytickets.css"
+import "./styling/contact.css"
 import "./styling/viewdata.css"
 
 

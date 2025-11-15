@@ -21,13 +21,24 @@ const Tickets=()=>{
    ,[])
 
 const del=(id)=>{
-    
-    axios.delete(`http://localhost:3000/ticketdata/${id}`).then(()=>{
-        alert("Deleted")
-        getdata()
-}).catch((err)=>{
-    console.log(err)
-})
+    swal.fire({
+        title:"Are you sure!",
+        text:"Do you really want to delete this ticket?",
+        icon:"warning",
+        showCancelButton:true,
+        confirmButtonText:"Yes,delete it!"
+
+    }).then((result)=>{
+        if(result.isConfirmed){
+             axios.delete(`http://localhost:3000/ticketdata/${id}`).then(()=>{
+                swal.fire("Deleted","Ticket deleted succesfully","success")
+                getdata()
+           }).catch((err)=>{
+                 console.log(err)
+               })
+        }
+    })
+   
 }    
 
 
@@ -70,7 +81,7 @@ const putdata=(e)=>{
     e.preventDefault()
     axios.put(`http://localhost:3000/ticketdata/${form.id}`,{...formdata,price:250}).then(()=>{
         getdata()
-        alert("Edited succefully")
+        swal.fire("Success!","Edited succesfully!","success")
     }).catch((err)=>(
         console.log(err)
         

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios"
+import swal from "sweetalert2";
 const Buyticket=()=>{
     const[formdata,setdata]=useState({
         category:"",
@@ -19,7 +20,12 @@ const Buyticket=()=>{
         e.preventDefault();
         axios.post(`http://localhost:3000/ticketdata`,{...formdata,price:250}).then(()=>{
 
-            alert("Data sent succefully........")
+            swal.fire({
+                title:"Success!",
+                text:"Booked succesfully",
+                icon:"success"
+
+            })
         }).catch((err)=>{
             console.log(err);
             

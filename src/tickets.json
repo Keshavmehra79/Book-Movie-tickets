@@ -3,20 +3,11 @@
     {
       "category": "Senior",
       "selecttime": "12pm:00-03:00pm",
-      "moviename": "Ashiqui",
+      "moviename": "tiranga",
       "date": "2025-11-02",
       "people": "3",
       "price": 250,
       "id": "eaed"
-    },
-    {
-      "category": "Adult",
-      "selecttime": "08:00pm-10:00pm",
-      "moviename": "rrr",
-      "date": "2025-11-28",
-      "people": "7",
-      "price": 250,
-      "id": "0d92"
     },
     {
       "category": "Child",
@@ -35,6 +26,24 @@
       "people": "4",
       "price": 250,
       "id": "9856"
+    },
+    {
+      "id": "3147",
+      "category": "Adult",
+      "selecttime": "12pm:00-03:00pm",
+      "moviename": "puspa",
+      "date": "2025-11-21",
+      "people": "3",
+      "price": 250
+    },
+    {
+      "id": "bdea",
+      "category": "Adult",
+      "selecttime": "12pm:00-03:00pm",
+      "moviename": "puspa",
+      "date": "2025-11-21",
+      "people": "3",
+      "price": 250
     }
   ]
 }
