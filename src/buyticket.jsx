@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios"
 import swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 const Buyticket=()=>{
     const[formdata,setdata]=useState({
         category:"",
@@ -32,11 +34,16 @@ const Buyticket=()=>{
         })
     }
 
+
+    const navigate=useNavigate()
+    const gotohome=()=>{
+        navigate("/")
+    }
     return(
         <>
         <div id="ticketbody">
-            <div id="ticketform">
-                <h1>Book Your Tickets</h1>
+            <div className="ticketform">
+                <h2>Book Your Tickets</h2><br></br>
                 <form onSubmit={senddata}>
                 Category<br></br>
                 <select name="category" id="" value={formdata.category} onChange={handlechange}>
@@ -44,14 +51,14 @@ const Buyticket=()=>{
                     <option >Adult</option>
                     <option >Child</option>
                     <option >Senior</option>
-                </select><br></br>
+                </select><br></br><br></br>
                 Select Time<br></br>
                 <select name="selecttime" id="" value={formdata.selecttime} onChange={handlechange}>
                     <option value="" disabled selected hidden>select Time</option>
                     <option value="08am:00-10:00am">08am:00-10:00am</option>
                     <option value="12pm:00-03:00pm">12pm:00-03:00pm</option>
                     <option value="08:00pm-10:00pm">08:00pm-10:00pm</option>
-                </select><br></br>
+                </select><br></br><br></br>
                Movie Name<br></br>
                 <input type="text" name="moviename" value={formdata.moviename}  onChange={handlechange} placeholder="Enter movie name" /><br></br>
                 Booking Date <br></br>
@@ -60,7 +67,7 @@ const Buyticket=()=>{
                 People<br></br>
                 <input type="text" name="people" value={formdata.people} placeholder="Enter number of people"  onChange={handlechange} />
 <br></br><br></br>
-                <button type="submit">Book Now </button>
+                <button type="submit" className="sendbtn" onClick={gotohome}>Book Now </button>
                 </form>
             </div>
         </div>

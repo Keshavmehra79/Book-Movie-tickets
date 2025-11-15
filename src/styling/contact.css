@@ -19,7 +19,7 @@
     background-color: white;
 }
 
-#sendbtn{
+.sendbtn{
     background-color: rgb(10, 167, 228);
     color: white;
     font-weight: bold;

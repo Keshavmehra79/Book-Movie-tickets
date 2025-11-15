@@ -28,7 +28,7 @@ const Contact=()=>{
                 <h1>Send Message</h1>
                 <input type="text" placeholder=" Title" />
                 <input type="text" placeholder="Description" /><br></br>
-                <button id="sendbtn">Send</button>
+                <button className="sendbtn">Send</button>
             </div>
             
             </section>

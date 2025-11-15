@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import pic from "./assets/theter.jpeg"
 const Nav=()=>{
     const navigate=useNavigate()
     let checksignup=(e,path)=>{

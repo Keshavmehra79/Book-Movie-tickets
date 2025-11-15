@@ -123,32 +123,34 @@ const putdata=(e)=>{
             </tbody>
             </table>  
             {
-                (form && (
-                     <form onSubmit={putdata}>
+                (form && ( 
+                  <div className="ticketform">
+                       <form onSubmit={putdata}>
                 Category<br></br>
                 <select name="category" value={formdata.category} onChange={handlechange}>
                     <option value="" disabled selected hidden>select category</option>
                     <option >Adult</option>
                     <option >Child</option>
                     <option >Senior</option>
-                </select><br></br>
+                </select><br></br><br></br>
                 Select Time<br></br>
                 <select name="selecttime" id="" value={formdata.selecttime} onChange={handlechange}>
                     <option value="" disabled selected hidden>select time</option>
                     <option value="08am:00-10:00am">08am:00-10:00am</option>
                     <option value="12pm:00-03:00pm">12pm:00-03:00pm</option>
                     <option value="08:00pm-10:00pm">08:00pm-10:00pm</option>
-                </select><br></br>
+                </select><br></br><br></br>
                Movie Name<br></br>
-                <input type="text" name="moviename" value={formdata.moviename}  onChange={handlechange} placeholder="Enter movie name" /><br></br>
+                <input type="text"  name="moviename" value={formdata.moviename}  onChange={handlechange} placeholder="Enter movie name" /><br></br>
                 Booking Date <br></br>
                 <input type="date" name="date" value={formdata.date} placeholder="dd-mm-yyyy"  onChange={handlechange}/><br></br>
 
                 People<br></br>
                 <input type="text" name="people" value={formdata.people} placeholder="Enter number of people"  onChange={handlechange} />
 <br></br><br></br>
-                <button type="submit">Submit</button>
+                <button type="submit" className="sendbtn">Submit</button>
                 </form>
+                  </div>
                 ))
             }      
         </>
