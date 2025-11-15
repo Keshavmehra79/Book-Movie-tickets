@@ -1,15 +1,6 @@
 {
   "ticketdata": [
     {
-      "category": "Senior",
-      "selecttime": "12pm:00-03:00pm",
-      "moviename": "tiranga",
-      "date": "2025-11-02",
-      "people": "3",
-      "price": 250,
-      "id": "eaed"
-    },
-    {
       "category": "Child",
       "selecttime": "12pm:00-03:00pm",
       "moviename": "jung",

@@ -60,3 +60,14 @@ place-items: center;
     color: rgb(24, 24, 220);
 }
 
+
+
+@media (max-width:900px){
+        #sec2{
+            flex-wrap: wrap;
+        }
+        #sec1{
+            width: 100%;
+            height: 130vh;
+        }
+}

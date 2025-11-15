@@ -38,3 +38,13 @@ place-items: center;
     justify-content: center;
     color: white;
 }
+
+
+@media (min-width: 0px) and (max-width:900px){
+    #footer{
+        height: 80vh;
+        flex-wrap: wrap;
+    }
+
+  
+}

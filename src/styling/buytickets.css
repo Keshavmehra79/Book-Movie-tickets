@@ -14,3 +14,8 @@ padding: 10px;
 background-color: rgb(198, 191, 191);
 }
 
+@media (max-width:900px){
+   .ticketform{
+    width: 70%;
+   }
+}
