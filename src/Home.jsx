@@ -1,6 +1,7 @@
 import React from "react";
 import {  Swiper,SwiperSlide } from 'swiper/react';
 import { useNavigate } from "react-router-dom";
+import swal from "sweetalert2";
 import 'swiper/css';
 import './styling/swipercss.css';
 import { Autoplay, Navigation,Pagination } from 'swiper/modules';
@@ -13,7 +14,15 @@ import pic5 from "./assets/maa.webp"
 const swiper=()=>{
   const navigateto=useNavigate()
   const gobuyticket=()=>{
-    navigateto("/buyticket")
+         let storage=localStorage.getItem('Userdata')
+    if(!storage){
+      swal.fire('Information!','Please login or signup first','info')
+      navigateto("/signup")
+    }
+    else{
+      navigateto("/buyticket")
+    }
+    
   }
     return(
         <>

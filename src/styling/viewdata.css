@@ -30,3 +30,10 @@ font-size: large;
 
 }
 
+@media (max-width:900px){
+    #tb1{
+         height: 50vh;
+    font-size: x-small;
+    width: 100%;
+    }
+}

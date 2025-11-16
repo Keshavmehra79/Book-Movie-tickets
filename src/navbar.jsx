@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import swal from "sweetalert2";
 const Nav=()=>{
     const navigate=useNavigate()
     let checksignup=(e,path)=>{
          let storage=localStorage.getItem('Userdata')
         if(!storage){
             e.preventDefault()
-            alert("Please login or signup first")
+            swal.fire("Information!","Please login or signup first","info");
             navigate("/signup")
         } 
         else {

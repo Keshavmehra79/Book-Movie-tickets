@@ -34,5 +34,12 @@ input{
 
 }
 
+@media (max-width:900px){
+    #signup{
+        width: 80%;
+        height: 70vh;
+    }
+}
+
 
 
