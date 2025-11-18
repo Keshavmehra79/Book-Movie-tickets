@@ -12,7 +12,7 @@ import Tickets from "./tickets.jsx";
 import Buyticket from "./buyticket.jsx";
 
 const root=()=>{
- 
+ //this is my App.jsx
     return(
         <>
         <Navbar/>
